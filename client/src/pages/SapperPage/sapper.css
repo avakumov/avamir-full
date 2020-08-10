@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'digits-mono';
+    src: url('./fonts/digital-mono.ttf');
+}
+
+.digits-start-sapper  {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.buttons-sapper  {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.item-sapper  {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.status-sapper  {
+    color: red;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.8rem;
+    text-align: center;
+}
+
+.digit-sapper {
+    font-size: xx-large;
+    font-weight: bold;
+    color: red;
+    width: 4rem;
+    padding-left: 1rem;
+}
+
+.sapper-main {
+    margin: 1rem auto;
+    width: fit-content;
+    padding: 3px;
+    background-color: rgb(51, 48, 45);
+    -webkit-box-shadow: 10px 13px 22px 3px gray;
+    -moz-box-shadow: 10px 13px 22px 3px gray;
+    box-shadow: 10px 13px 22px 3px gray;
+}
+
+.sapper-head-sapper {
+    font-family: digits-mono;
+}
+
+.field-sapper {
+    background-color: honeydew;
+}
+
+.btn-sapper {
+    font-family: digits-mono;
+    font-weight: bold;
+    font-size: 0.9rem;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+    background-color: #f9f9f9;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #666666;
+    padding: 6px 12px;
+    text-decoration: none;
+    width: 5rem;
+}
+.active-sapper {
+    color: red !important;
+}
+
+.btn-sapper:hover {
+    background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+    background-color: #e9e9e9;
+}
+
+.hidden-cell-sapper {
+    background: grey;
+    width: 100%;
+    height: 100%;
+}
+.cell-div-sapper {
+    width: 20px;
+    height: 20px;
+    box-shadow: inset 0 0 2px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.cell-image-sapper {
+    width: 15px;
+}
+
+.cell-count-1-sapper {
+    color: blue;
+}
+
+.cell-count-2-sapper {
+    color: green;
+}
+.cell-count-3-sapper {
+    color: red;
+}
+.cell-count-4-sapper {
+    color: darksalmon;
+}
+.cell-count-5-sapper {
+    color: darkviolet;
+}
+.cell-count-6-sapper{
+    color: darkorange;
+}
+.cell-count-7-sapper {
+    color: mediumvioletred;
+}
+.cell-count-8-sapper {
+    color: teal;
+}

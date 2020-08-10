@@ -1,0 +1,121 @@
+html,body{margin:0;padding:0}
+
+
+.error-to-user{
+	background-color: lightsalmon;
+	padding: 1rem;
+	margin: 0.5rem;
+	height: fit-content;
+}
+.paper {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+@font-face {
+    font-family: 'pragmata-pro';
+    src: url('../fonts/Pragmata-Pro.ttf');
+}
+
+.app {
+    font-family: pragmata-pro;
+    line-height: 100%;
+}
+
+.button-gray {
+    font-size: 14px;
+    display: block;
+    padding: 5px 14px 5px;
+    border-radius: 3px;
+    background: #e8e8e8;
+    color: rgb(0, 0, 0);
+    width: fit-content;
+    cursor: pointer;
+}
+.button-gray:hover {
+    background-color: #d8d8d8;
+}
+
+
+.button-blue {
+	box-shadow:inset 0px 1px 0px 0px 2098d1;
+	background:linear-gradient(to bottom, skyblue 5%, #2098d1 100%);
+	background-color:skyblue;
+	border:1px solid #1d90c5;
+    display:inline-block;
+	cursor:pointer;
+	color:#020202;
+	font-size:13px;
+	font-weight:bold;
+	padding:5px 10px;
+    text-decoration:none;
+}
+.button-blue:hover {
+	background:linear-gradient(to bottom, #2098d1 5%, #135675 100%);
+    background-color:#2098d1;
+	border:1px solid #0a364b;
+}
+.button-blue:active {
+	top:1px;
+	border-radius: 0px;
+}
+
+.button-danger {
+	box-shadow:inset 0px 1px 0px 0px 2098d1;
+	background:linear-gradient(to bottom, rgb(235, 135, 135) 5%, #d33a3a 100%);
+	background-color:rgb(235, 135, 135);
+	border:1px solid #d33a3a;
+    display:inline-block;
+	cursor:pointer;
+	color:#020202;
+	font-size:13px;
+	font-weight:bold;
+	padding:5px 10px;
+    text-decoration:none;
+}
+.button-danger:hover {
+	background:linear-gradient(to bottom, #d33a3a 5%, #852626 100%);
+	background-color:#d33a3a;
+}
+.button-danger:active {
+	position:relative;
+	top:1px;
+}
+
+.button-gray2 {
+	box-shadow:inset 0px 1px 0px 0px 2098d1;
+	background:linear-gradient(to bottom, rgb(230, 230, 230) 5%, #d6d6d6 100%);
+	background-color:rgb(230, 230, 230) ;
+	border:1px solid #d6d6d6;
+    display:inline-block;
+	cursor:pointer;
+	color:#020202;
+	font-size:13px;
+	font-weight:bold;
+	padding:5px 10px;
+    text-decoration:none;
+}
+.button-gray2:hover {
+	background:linear-gradient(to bottom, #d6d6d6 5%, #797979 100%);
+	background-color:#d6d6d6;
+}
+.button-gray2:active {
+	position:relative;
+	top:1px;
+}
+
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    vertical-align: middle;
+
+    text-decoration: none;
+    color: initial;
+}
