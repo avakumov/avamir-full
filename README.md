@@ -1,7 +1,7 @@
 ## Описание
 
 Приложение представляет из себя fullstack app:
-1. Frontend (react)
+1. Frontend (react, redux)
 2. Backend API(express, mongoose). Используется mongoDB
    
 
