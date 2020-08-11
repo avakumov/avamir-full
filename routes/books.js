@@ -59,6 +59,8 @@ router.post('/add', async (req, res) => {
             namePngFile,
             pages,
         } = await uploadBookAndImageCover(req.files, baseDirToSave)
+
+        
         if (req.body.title === '') {
             req.body['title'] = bookTitle.substring(0, bookTitle.length - 4)
         }
@@ -69,7 +71,7 @@ router.post('/add', async (req, res) => {
         //validation
         const { error } = bookValidation(req.body)
         if (error)
-            return res.status(400).json({ error: error.details[0].message })
+            return res.status(422).json({ error: error.details[0].message })
 
         const isBookExist = await Book.findOne({
             title: req.body.title,
@@ -77,7 +79,7 @@ router.post('/add', async (req, res) => {
         })
 
         if (isBookExist)
-            return res.status(400).json({ error: 'Book already exists' })
+            return res.status(400).json({ error: 'Книга с таким названием уже существует.' })
 
         const book = new Book({
             title: req.body.title,
@@ -92,6 +94,7 @@ router.post('/add', async (req, res) => {
         res.json({ book: savedBook })
     } catch (err) {
         console.log(err)
+        res.status(422).json({error: "Возможно вы не прикрепили pdf файл"})
     }
 })
 

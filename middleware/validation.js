@@ -47,7 +47,7 @@ const taskValidation = (data) => {
 
 const bookValidation = (data) => {
     const schema = Joi.object({
-        title: Joi.string().min(6).max(255).required(),
+        title: Joi.string().min(2).max(255).required(),
         bookPath: Joi.string().max(500).required(),
         coverPath: Joi.string().max(500).required(),
         category: Joi.string().max(50).required(),

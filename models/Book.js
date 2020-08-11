@@ -4,7 +4,7 @@ const bookSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true,
-        min: 6,
+        min: 2,
         max: 255,
     },
     bookPath: {
