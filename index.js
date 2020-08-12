@@ -29,27 +29,25 @@ const utilsRoutes = require('./routes/utils')
 const verifyToken = require('./middleware/validate-token')
 
 // middlewares
-app.use('/api/files', express.static('files'))
+app.use('/react/api/files', express.static('files'))
 app.use(fileUpload({ createParentPath: true }))
 app.use(express.json()) // for body parser
 app.use(cors())
 // route middlewares
-app.use('/api/auth', authRoutes)
-app.use('/api/tasks', verifyToken, tasksRoutes)
-app.use('/api/books', verifyToken, booksRoutes)
-app.use('/api/posts', verifyToken, postsRoutes)
-app.use('/api/utils', utilsRoutes)
+app.use('/react/api/auth', authRoutes)
+app.use('/react/api/tasks', verifyToken, tasksRoutes)
+app.use('/react/api/books', verifyToken, booksRoutes)
+app.use('/react/api/posts', verifyToken, postsRoutes)
+app.use('/react/api/utils', utilsRoutes)
 
-if (process.env.NODE_ENV === 'production') 
-{
-    app.use('/', express.static(path.join(__dirname,'client', 'build')))
-  
+if (process.env.NODE_ENV === 'production') {
+    app.use('/react', express.static(path.join(__dirname, 'client', 'build')))
+
     app.get('*', (req, res) => {
-      res.sendFile(path.resolve(__dirname,'client', 'build', 'index.html'))
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
     })
-  }
-  
+}
 
-
-
-app.listen(process.env.PORT, () => console.log(`server is running on port ${process.env.PORT}...`))
+app.listen(process.env.PORT, () =>
+    console.log(`server is running on port ${process.env.PORT}...`)
+)

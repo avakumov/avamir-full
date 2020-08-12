@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown'
 import hljs from 'highlight.js'
 import { connect } from 'react-redux'
 
-import {history} from '../../_helpers'
+import { history } from '../../_helpers'
 import { postsActions } from '../../_actions'
 import { getTags } from './utils/utils'
 

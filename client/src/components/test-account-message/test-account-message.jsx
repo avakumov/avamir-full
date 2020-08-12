@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { connect } from 'react-redux'
 import styled from 'styled-components'
 
-
 const Main = styled.div`
     margin: 20px auto;
     width: 450px;
@@ -16,11 +15,10 @@ const Main = styled.div`
     justify-content: flex-start;
 `
 
-const TestAccountMessage  = ({
-    loggedIn,
-}) => {
-    if (loggedIn) {return ''}
-    else {
+const TestAccountMessage = ({ loggedIn }) => {
+    if (loggedIn) {
+        return ''
+    } else {
         return (
             <Main>
                 <div>Данные для входа тестового аккаунта: </div>
@@ -32,18 +30,14 @@ const TestAccountMessage  = ({
 }
 
 function mapStateToProps(state) {
-    const {
-        loggedIn,
-    } = state.authentication
+    const { loggedIn } = state.authentication
     return {
         loggedIn,
     }
 }
 
-
-
 const connectedTestAccountMessage = connect(
     mapStateToProps,
     null
-)(TestAccountMessage )
+)(TestAccountMessage)
 export { connectedTestAccountMessage as TestAccountMessage }

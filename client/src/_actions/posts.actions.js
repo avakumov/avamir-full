@@ -1,6 +1,6 @@
 import { postsConstants } from '../_constants'
 import { postsService } from '../_services'
-import {history} from '../_helpers'
+import { history } from '../_helpers'
 
 export const postsActions = {
     getAllPosts,
